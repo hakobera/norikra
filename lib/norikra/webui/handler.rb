@@ -15,6 +15,12 @@ class Norikra::WebUI::Handler < Sinatra::Base
 
   enable :sessions
 
+  helpers do
+    def s(text)
+      text.gsub(/ /, '_')
+    end
+  end
+
   def norikra_version; Norikra::VERSION ; end
 
   def logger ; Norikra::Log.logger ; end

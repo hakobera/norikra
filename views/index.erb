@@ -83,12 +83,12 @@
       <% end %>
     </td>
     <td>
-      <a class="btn btn-danger btn-xs" data-toggle="modal" href="#removeQuery<%= query.name %>">
+      <a class="btn btn-danger btn-xs" data-toggle="modal" href="#removeQuery<%=s query.name %>">
         <span class="glyphicon glyphicon-trash"></span>
       </a>
       <div class="modal fade"
-        id="removeQuery<%= query.name %>"
-        tabindex="-1" role="dialog" aria-labelledby="removeQueryLabel<%= query.name %>" aria-hidden="true">
+        id="removeQuery<%=s query.name %>"
+        tabindex="-1" role="dialog" aria-labelledby="removeQueryLabel<%=s query.name %>" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
